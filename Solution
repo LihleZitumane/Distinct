@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Distinct
+{
+    class Program
+    {
+    public static int solution(int[] A)
+    {
+      var query = A.Distinct();
+      return query.Count();
+    }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+      Console.WriteLine(solution(new int[] { 2, 1, 1, 2, 3, 1 }));
+        }
+    }
+}
